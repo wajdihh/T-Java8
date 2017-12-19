@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * Lambda expression is used to simplify code
+ */
 public class LambdaExample {
 
     List<String> names = Arrays.asList("peter", "anna", "mike", "xenia");

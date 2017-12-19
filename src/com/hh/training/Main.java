@@ -1,6 +1,7 @@
 package com.hh.training;
 
 import com.hh.training.extensionMethods.Formula;
+import com.hh.training.functionalInterfaces.Converter;
 import com.hh.training.lambda.LambdaExample;
 
 /**
@@ -11,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        new Main().lambdaExpression();
+        new Main().functionalInterfaces();
 
     }
 
@@ -37,5 +38,14 @@ public class Main {
      */
     private void lambdaExpression(){
         new LambdaExample().step4();
+    }
+
+    /**
+     * functional Interfaces
+     */
+    private void functionalInterfaces(){
+        Converter converter = a -> Integer.parseInt(a);
+        int convFormated=converter.convert("233");
+        System.out.println("Converted is "+convFormated);
     }
 }
