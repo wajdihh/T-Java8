@@ -60,4 +60,5 @@ public class Main {
      private void predicates(){
       new PredicateExample().test();
     }
+
 }
