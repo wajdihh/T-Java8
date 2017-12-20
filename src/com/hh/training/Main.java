@@ -1,5 +1,6 @@
 package com.hh.training;
 
+import com.hh.training.Predicates.PredicateExample;
 import com.hh.training.extensionMethods.Formula;
 import com.hh.training.functionalInterfaces.Converter;
 import com.hh.training.lambda.LambdaExample;
@@ -12,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        new Main().functionalInterfaces();
+        new Main().predicates();
 
     }
 
@@ -52,5 +53,11 @@ public class Main {
         Converter converter = a ->  Integer.parseInt(a)*10;
         int convFormated=converter.convert("233");
         System.out.println("Converted is "+convFormated);
+    }
+    /**
+     * Predicates
+     */
+     private void predicates(){
+      new PredicateExample().test();
     }
 }
