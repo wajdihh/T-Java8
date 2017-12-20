@@ -44,7 +44,12 @@ public class Main {
      * functional Interfaces
      */
     private void functionalInterfaces(){
-        Converter converter = a -> Integer.parseInt(a);
+         /*
+          * override and apply code inside the abstract method in one single line inside an other method
+          */
+          // we can write like this  : Converter converter = (a) -> { return  Integer.parseInt(a)*10; };
+          // OR we can write like this  : Converter converter = (a) ->  Integer.parseInt(a)*10;
+        Converter converter = a ->  Integer.parseInt(a)*10;
         int convFormated=converter.convert("233");
         System.out.println("Converted is "+convFormated);
     }
