@@ -1,6 +1,7 @@
 package com.hh.training;
 
 import com.hh.training.Predicates.PredicateExample;
+import com.hh.training.Streams.StreamExample;
 import com.hh.training.extensionMethods.Formula;
 import com.hh.training.functionalInterfaces.Converter;
 import com.hh.training.lambda.LambdaExample;
@@ -13,8 +14,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        new Main().predicates();
+       // new Main().predicates();
 
+        new StreamExample().reduce();
     }
 
 
